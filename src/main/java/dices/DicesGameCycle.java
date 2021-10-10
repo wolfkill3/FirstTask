@@ -51,7 +51,7 @@ public class DicesGameCycle {
     private void showStatistic(final String winner) {
         System.out.println("Победитель - " + winner);
         System.out.println("Статистика:");
-        scoreByPlayerId.forEach((name, score) -> System.out.println("Игрок " + name + " выиграл " + score + " раундах!"));
+        scoreByPlayerId.forEach((name, score) -> System.out.println("Игрок " + name + " победил в " + score + " раундах!"));
     }
 
     private Pair<String, Integer> runGameRound() throws InterruptedException {

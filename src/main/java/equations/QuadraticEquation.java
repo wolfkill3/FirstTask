@@ -52,7 +52,7 @@ public class QuadraticEquation {
         public static double get(double a, double b, double c) {
             double discriminate = Math.pow(b, 2) - (4 * a * c);
 
-            if (discriminate > 0) {
+            if (discriminate >= 0) {
                 return discriminate;
             } else {
                 throw new RuntimeException("Discriminate below zero");

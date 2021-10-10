@@ -18,7 +18,7 @@ public class QuadraticEquationTest {
         expectedSquares = new ImmutablePair<>(-1.0, -3.0);
         Assertions.assertEquals(expectedSquares, squares);
 
-        equation = new QuadraticEquation(1, 4, 4, 0); // x^2 +4x +4 = 0, discriminate < 0
+        equation = new QuadraticEquation(4, 1, 4, 0); // 4x^2 +1x +4 = 0, discriminate < 0
         Assertions.assertThrows(RuntimeException.class, equation::solve);
     }
 }
