@@ -3,7 +3,7 @@ package address;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class PersonFinder {
+public class PersonUtils {
     public static Person findBySecondName(final String secondName, final List<Person> people) {
         var optionalPerson = people.stream()
                                    .filter(person -> person.getSecondName().equals(secondName))

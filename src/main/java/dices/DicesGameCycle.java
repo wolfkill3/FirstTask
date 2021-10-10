@@ -37,6 +37,7 @@ public class DicesGameCycle {
             int currentWinnerScore = scoreByPlayerId.get(winner.getLeft()) + 1;
 
             if (currentWinnerScore == WINS_TO_WIN) {
+                scoreByPlayerId.put(winner.getLeft(), currentWinnerScore);
                 showStatistic(winner.getLeft());
                 break;
             }
